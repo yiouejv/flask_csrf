@@ -45,6 +45,7 @@ class LoginView(views.MethodView):
 
     def post(self):
         form = LoginForm(request.form)
+        print(request.form)
         if form.validate:
             email = form.email.data
             password = form.password.data

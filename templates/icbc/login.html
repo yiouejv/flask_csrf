@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf_token" content="{{ csrf_token() }}">
     <title>工商银行登陆界面</title>
+    <script src="{{ url_for('static', filename="jquery.min.js") }}"></script>
+    <script src="{{ url_for('static', filename="icbc/login.js") }}"></script>
+    <script src="{{ url_for('static', filename="icbc/yioajax.js") }}"></script>
 </head>
 <body>
 <form action="" method="post">
@@ -18,7 +22,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="登陆"></td>
+            <td><input type="submit" value="登陆" id="submit"></td>
         </tr>
     </table>
 
